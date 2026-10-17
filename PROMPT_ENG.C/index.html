@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Ranjan | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Connected External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Colourful Animated Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Aditya<span>.dev</span></a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <span class="badge">👋 Welcome to my colorful world</span>
+                <h1>Hi, I'm <span class="gradient-text">Aditya Ranjan</span></h1>
+                <h2 class="typing-container">
+                    I am a <span id="typed-text" class="typed-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-desc">
+                    Passionate about Artificial Intelligence, Data Science, Web Development, and solving real-world problems through clean and efficient code.
+                </p>
+                
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <!-- Replace '#' with your Google Drive / PDF Resume Link -->
+                    <a href="#" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-file-download"></i> Resume
+                    </a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com/adityaranjan102938-a11y" target="_blank" aria-label="GitHub" class="social-icon github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aditya-ranjan-50851b381" target="_blank" aria-label="LinkedIn" class="social-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/noctis_ady?srtk=d25qbHN1Ynhxd3Uw" target="_blank" aria-label="Instagram" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:adityaranjan102938@gmail.com" aria-label="Email" class="social-icon email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+                         <!-- Profile Visual / Interactive Photo Upload -->
+            <div class="hero-visual reveal">
+                <div class="avatar-card">
+                    <div class="avatar-glow"></div>
+                    
+                    <!-- Clicking anywhere on this circle opens your device file picker -->
+                    <label for="photo-upload" class="avatar-placeholder" title="Click to select profile photo">
+                        <!-- Default Initials (Hidden automatically once photo is selected) -->
+                        <span class="initials" id="avatar-initials">AR</span>
+                        
+                        <!-- Uploaded Profile Image -->
+                        <img src="" alt="Aditya Ranjan" id="profile-img" class="profile-img" style="display: none;">
+                        
+                        <!-- Hover Camera Overlay -->
+                        <div class="upload-overlay">
+                            <i class="fas fa-camera"></i>
+                            <span>Choose Photo</span>
+                        </div>
+
+                        <!-- Hidden File Input that opens device storage -->
+                        <input type="file" id="photo-upload" accept="image/*" hidden>
+
+                        <!-- Floating Colourful Badges -->
+                        <div class="floating-badge badge-ai"><i class="fas fa-brain"></i> AI & DS</div>
+                        <div class="floating-badge badge-py"><i class="fab fa-python"></i> Python</div>
+                        <div class="floating-badge badge-web"><i class="fas fa-code"></i> Web Dev</div>
+                    </label>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>Discover</span>
+                <h2>About <span class="gradient-text">Me</span></h2>
+            </div>
+
+            <div class="about-card glass-card reveal">
+                <p>
+                    Hello! I am <strong>Aditya</strong>, an Artificial Intelligence and Data Science student who enjoys learning programming and exploring modern technologies.
+                </p>
+                <p>
+                    I am passionate about programming, Artificial Intelligence, Web Development and building real-world projects. I am deeply interested in Software Development, Artificial Intelligence, Data Structures, Web Development and Problem Solving.
+                </p>
+                <p>
+                    My goal is to continuously improve my technical skills and build useful projects that solve real-world problems.
+                </p>
+
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Jaipur, Rajasthan</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Degree</h4>
+                            <p>B.Tech (2nd Year)</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>adityaranjan102938@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Milestones Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>Academic Journey</span>
+                <h2>Education & <span class="gradient-text">Highlights</span></h2>
+            </div>
+
+            <div class="edu-grid">
+                <!-- Education Card -->
+                <div class="glass-card edu-card reveal">
+                    <div class="card-icon edu-icon"><i class="fas fa-university"></i></div>
+                    <span class="year-badge">Current • 2nd Year</span>
+                    <h3>Bachelor of Technology (B.Tech)</h3>
+                    <h4>JECRC University, Jaipur</h4>
+                    <p class="edu-stream">Specialization: Artificial Intelligence & Data Science</p>
+                    <div class="cgpa-pill">
+                        <i class="fas fa-star"></i> CGPA: <strong>7.88</strong>
+                    </div>
+                </div>
+
+                <!-- Experience / Opportunity Card -->
+                <div class="glass-card edu-card reveal">
+                    <div class="card-icon exp-icon"><i class="fas fa-laptop-code"></i></div>
+                    <span class="year-badge">Experience & Goals</span>
+                    <h3>Self-Taught Developer & Problem Solver</h3>
+                    <h4>Open to Internships & Collaborations</h4>
+                    <p class="edu-stream">
+                        Actively building full-stack web applications, practicing Data Structures & Algorithms (DSA), and exploring machine learning models.
+                    </p>
+                    <div class="cgpa-pill">
+                        <i class="fas fa-check-circle"></i> Available for Projects
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>My Toolbox</span>
+                <h2>Technical <span class="gradient-text">Skills</span></h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card reveal" style="--skill-color: #00599C;">
+                    <i class="fas fa-microchip"></i>
+                    <h3>C</h3>
+                </div>
+                <div class="skill-card reveal" style="--skill-color: #0086d4;">
+                    <i class="fas fa-code"></i>
+                    <h3>C++</h3>
+                </div>
+                <div class="skill-card reveal" style="--skill-color: #FFD43B;">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card reveal" style="--skill-color: #E34F26;">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card reveal" style="--skill-color: #1572B6;">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card reveal" style="--skill-color: #F7DF1E;">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card reveal" style="--skill-color: #FF6B6B;">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>DSA</h3>
+                </div>
+                <div class="skill-card reveal" style="--skill-color: #F05032;">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git & GitHub</h3>
+                </div>
+                <div class="skill-card reveal" style="--skill-color: #A855F7;">
+                    <i class="fas fa-brain"></i>
+                    <h3>Artificial Intelligence</h3>
+                </div>
+                <div class="skill-card reveal" style="--skill-color: #00E5FF;">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>What I've Built</span>
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-banner banner-1">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Freelancing Platform</h3>
+                        <p>
+                            A web platform designed to connect clients with skilled freelancers, featuring project listings, user profiles, and seamless workflow management.
+                        </p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/adityaranjan102938-a11y" target="_blank" class="btn-sm">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn-sm btn-live">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-banner banner-2">
+                        <i class="fas fa-hand-scissors"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>
+                            An interactive and engaging Rock Paper Scissors game featuring real-time score tracking, randomized computer logic, and smooth UI animations.
+                        </p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/adityaranjan102938-a11y" target="_blank" class="btn-sm">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn-sm btn-live">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-banner banner-3">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Student Portfolio</h3>
+                        <p>
+                            A colourful, responsive personal portfolio website crafted to showcase technical skills, academic achievements, and software engineering projects.
+                        </p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/adityaranjan102938-a11y" target="_blank" class="btn-sm">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#home" class="btn-sm btn-live">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>Let's Connect</span>
+                <h2>Get In <span class="gradient-text">Touch</span></h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info glass-card reveal">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for collaborations, internships, project discussions, or just to say hello!</p>
+
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:adityaranjan102938@gmail.com">adityaranjan102938@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <span>Phone</span>
+                            <a href="tel:+919835718163">+91 9835718163</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <span>Location</span>
+                            <p>Jaipur, Rajasthan, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form glass-card reveal" id="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <p id="form-status" class="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> <strong>Aditya Ranjan</strong>. Built with ❤️ and colourful code.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/adityaranjan102938-a11y" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aditya-ranjan-50851b381" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/noctis_ady?srtk=d25qbHN1Ynhxd3Uw" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Connected External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
